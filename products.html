@@ -3,10 +3,32 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Products</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>SwiftCart || E-Commerce</title>
+    <!-- css -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- tailwind css & daisy UI-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- fonts awsome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
   <body>
+    <!-- header part -->
     <header>
       <div class="navbar bg-base-100 shadow-sm lg:px-30">
         <div class="navbar-start">
@@ -31,8 +53,8 @@
               tabindex="-1"
               class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
             >
-              <li><a href="./index.html">Home</a></li>
-              <li><a href="./products.html">Product</a></li>
+              <li><a href="/index.html">Home</a></li>
+              <li><a href="/products.html">Product</a></li>
               <li><a href="">About</a></li>
               <li><a href="">Contact</a></li>
             </ul>
@@ -41,8 +63,8 @@
         </div>
         <div class="navbar-center hidden lg:flex">
           <ul class="menu menu-horizontal px-1 font-bold">
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./products.html">Product</a></li>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/products.html">Product</a></li>
             <li><a href="">About</a></li>
             <li><a href="">Contact</a></li>
           </ul>
@@ -52,5 +74,66 @@
         </div>
       </div>
     </header>
+    <!-- ui section -->
+    <section class="max-w-7xl mx-auto mt-10">
+      <div>
+        <h2 class="lg:text-5xl text-3xl font-bold text-center">Our Products</h2>
+      </div>
+      <!-- categories list -->
+      <div
+        class="mt-6 grid lg:grid-cols-4 md:grid-cols-2 text-center gap-6"
+        id="categoryList"
+      ></div>
+      <!-- items card -->
+      <div
+        class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-10"
+        id="productContainer"
+      ></div>
+    </section>
+     <!-- footer section -->
+    <footer class="p-4 bg-[#1E2939] text-gray-400  mt-10">
+      <div class="lg:flex justify-around lg:py-16 max-w-7xl mx-auto">
+       <div class="w-1/4">
+         <div class="text-violet-500 font-bold text-5xl mb-4 ">SeiftCart</div>
+         <p>You'r one-stop shop for all your Fashion and Lifestyle needs. Quality products, Fast Delivary and excellent support.</p>
+       </div>
+        <div>
+          <h2 class=" font-medium text-xl">QUICK LINK</h2>
+         <div class="flex-col flex text-base/8">
+          <a href="">About</a>
+          <a href="">Portfolio</a>
+          <a href="">Services</a>
+          <a href="">Blog</a>
+          <a href="">Contact</a>
+         </div>
+      </div>
+        <div>
+          <h2 class=" font-medium text-xl">RESOURCES</h2>
+         <div class="flex-col flex text-base/8">
+          <a href="">Authentication</a>
+          <a href="">System Status</a>
+          <a href="">Terms of Service</a>
+          <a href="">Pricing</a>
+          <a href="">Over Right</a>
+         </div>
+      </div>
+        <div>
+          <h2 class="font-medium text-xl">DEVELOPERS</h2>
+         <div class="flex-col flex text-base/8">
+          <a href="">Documentation</a>
+          <a href="">Authentication</a>
+          <a href="">API Reference</a>
+          <a href="">Support</a>
+          <a href="">Open Source</a>
+         </div>
+      </div>
+      
+    </footer>
+    <footer class="footer bg-[#1E2939] sm:footer-horizontal footer-center text-[#C0C0C0] ontent p-4 text-lg">
+  <aside>
+    <p>Copyright © 2025 - All right reserved by Me</p>
+  </aside >
+    </footer>
+    <script src="./script/app.js"></script>
   </body>
 </html>
