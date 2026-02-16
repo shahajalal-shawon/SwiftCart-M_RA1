@@ -52,7 +52,7 @@ const displayData = (products) => {
               </h2>
               <p class="text-2xl font-bold"> $ ${product.price}</p>
               <div class="flex justify-between text-gray-300">
-                <button
+                <button onclick="my_modal_5.showModal()"
                   class="btn hover:bg-blue-700 transition duration-500"
                 >
                   <i class="fa fa-eye" aria-hidden="true"></i>Details
